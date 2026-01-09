@@ -49,6 +49,7 @@ nav {
     display: none;
     flex-direction: column;
     background: var(--dark);
+    color: #FFFFFF;
 }
 
 nav a {
