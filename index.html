@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="WDD231 course home page showcasing my web design projects and skills">
+        <meta name="author" content="Majok Aguer">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WDD231 Home</title>
+
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/small.css">
+        <link rel="stylesheet" href="styles/larger.css">
+
+        <script src="scripts/navigation.js" defer></script>
+        <script src="scripts/date.js" defer></script>
+        <script src="scripts/course.js" defer></script>
+    </head>
+
+    <body>
+        <header>
+            <div class="brand">
+                <img src="images/logo.jpg" alt="Site Logo">
+                <span class="name">NextStepDev</span>
+            </div>
+            <button id="menuBtn">&#9776;</button>
+        </header>
+
+        <nav id="navMenu">
+            <a href="index.html" class="active">Home</a>
+            <a href="chamber/">Chamber Project</a>
+            <a href="final/">Final Project</a>
+        </nav>
+
+        <main>
+            <h1>Home</h1>
+
+            <section>
+                <h2>About Me</h2>
+                <p>
+                    My name is Majok Aguer and I am passionate about designing and building websites.
+                    I enjoy learning how to turn ideas into functional web pages using HTML, CSS, and JavaScript.
+                    I live in Uganda, where I am working hard to grow my skills in web development and technology.
+                    I am especially interested in creating clean designs that work well on all devices.
+                    My goal is to become a professional web developer and use my skills to make a positive impact in my
+                    community and beyond.
+                </p>
+            </section>
+
+            <section>
+                <h2>Certificate Courses</h2>
+
+                <div class="filters">
+                    <button id="allBtn">All</button>
+                    <button id="wddBtn">WDD</button>
+                    <button id="cseBtn">CSE</button>
+                </div>
+
+                <p>Total Credits: <span id="totalCredits"></span></p>
+                <div id="courses"></div>
+            </section>
+
+            <section>
+                <h2>Resources</h2>
+                <p>Helpful links and study tools.</p>
+            </section>
+        </main>
+
+        <footer>
+            <div class="social">
+                <a href="https://github.com/aguer47" aria-label="GitHub">
+                    <img src="images/github.png" alt="GitHub icon">
+                </a>
+                <a href="https://linkedin.com" aria-label="LinkedIn">
+                    <img src="images/linkedin.png" alt="LinkedIn icon">
+                </a>
+                <a href="https://instagram.com" aria-label="Instagram">
+                    <img src="images/instagram.png" alt="Instagram icon">
+                </a>
+            </div>
+
+
+            <p>&copy; <span id="currentyear"></span> Majok Aguer | Kampala, Uganda</p>
+            <p id="lastModified"></p>
+        </footer>
+    </body>
+
+</html>

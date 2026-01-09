@@ -1,0 +1,146 @@
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.brand img {
+    width: 45px;
+}
+
+.brand .name {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+:root {
+    --dark: #2f2f2f;
+    --light: #e6e6e6;
+    --accent: #5a5a5a;
+    --complete: #cce5cc;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    background: #f4f4f4;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #ddd;
+    padding: .7rem 1rem;
+}
+
+header img {
+    width: 45px;
+}
+
+.name {
+    font-weight: bold;
+}
+
+#menuBtn {
+    font-size: 1.6rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+nav {
+    display: none;
+    flex-direction: column;
+    background: var(--dark);
+}
+
+nav a {
+    padding: .75rem;
+    color: white;
+    text-decoration: none;
+    border-top: 1px solid #444;
+}
+
+nav a:hover,
+nav .active {
+    background: #555;
+}
+
+nav.open {
+    display: flex;
+}
+
+main {
+    padding: 1rem;
+}
+
+section {
+    background: var(--light);
+    margin-bottom: 1rem;
+    padding: .7rem;
+    border-radius: 4px;
+}
+
+h2 {
+    background: var(--dark);
+    color: white;
+    padding: .4rem;
+    text-align: center;
+    margin: -.7rem -.7rem .7rem -.7rem;
+}
+
+
+.filters {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .5rem;
+}
+
+.filters button {
+    width: 32%;
+    border: 1px solid #888;
+    padding: .4rem;
+    background: #ddd;
+}
+
+#courses .course {
+    background: #ccc;
+    padding: .4rem;
+    margin-bottom: .3rem;
+    text-align: center;
+}
+
+.completed {
+    background: var(--complete);
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background: #ddd;
+    padding: 1rem;
+    text-align: center;
+}
+
+.social a {
+    font-size: 1.8rem;
+    margin: 0 .4rem;
+}
+
+.social img {
+    width: 32px;
+    height: 32px;
+    margin: 0 .4rem;
+    filter: grayscale(100%);
+}
+
+.social img:hover {
+    filter: none;
+    transform: scale(1.1);
+}
