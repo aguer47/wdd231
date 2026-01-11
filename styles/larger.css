@@ -1,11 +1,13 @@
 @media (min-width: 768px) {
 
+    /* Hide hamburger */
     #menuBtn {
         display: none;
     }
 
+    /* Desktop navigation */
     nav {
-        display: flex !important;
+        display: flex;
         flex-direction: row;
         justify-content: center;
     }
@@ -14,16 +16,34 @@
         border: none;
     }
 
-    main section:first-of-type {
+    /* Desktop page layout (wireframe grid) */
+    main {
         display: grid;
         grid-template-columns: 2fr 1fr;
         gap: 1rem;
     }
 
+    /* About Me section spans full width */
+    main section:nth-child(1) {
+        grid-column: 1 / -1;
+    }
+
+    /* Courses section left */
+    main section:nth-child(2) {
+        grid-column: 1 / 2;
+    }
+
+    /* Resources section right */
+    main section:nth-child(3) {
+        grid-column: 2 / 3;
+    }
+
+    /* Course filter buttons */
     .filters {
         justify-content: space-evenly;
     }
 
+    /* Course cards grid */
     #courses {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
