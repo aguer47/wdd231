@@ -1,0 +1,74 @@
+[
+    {
+        "name": "Makindye Digital Solutions",
+        "address": "Kansanga Road, Makindye, Kampala",
+        "phone": "+256 772 450123",
+        "website": "https://makindyedigital.ug",
+        "image": "makindye-digital.jpg",
+        "membership": 3,
+        "description": "Website development, computer repair and digital marketing services."
+    },
+    {
+        "name": "Green Basket Organics",
+        "address": "Gaba Road, Makindye, Kampala",
+        "phone": "+256 701 883210",
+        "website": "https://greenbasket.ug",
+        "image": "green-basket.jpg",
+        "membership": 2,
+        "description": "Supplying fresh organic fruits and vegetables to local homes and hotels."
+    },
+    {
+        "name": "Lakeview Fitness Center",
+        "address": "Nsambya Trading Centre, Makindye",
+        "phone": "+256 784 339988",
+        "website": "https://lakeviewfitness.ug",
+        "image": "lakeview-fitness.jpg",
+        "membership": 1,
+        "description": "Modern gym and wellness programs for the Makindye community."
+    },
+    {
+        "name": "Makindye Auto Garage",
+        "address": "Salaama Road, Makindye",
+        "phone": "+256 759 221456",
+        "website": "https://makindyeautogarage.ug",
+        "image": "makindye-auto.jpg",
+        "membership": 2,
+        "description": "Professional car servicing, diagnostics and spare parts."
+    },
+    {
+        "name": "Royal Taste Restaurant",
+        "address": "Katwe Road, Makindye",
+        "phone": "+256 703 991144",
+        "website": "https://royaltaste.ug",
+        "image": "royal-taste.jpg",
+        "membership": 3,
+        "description": "Local and continental cuisine with catering services."
+    },
+    {
+        "name": "Sahara Bakery",
+        "address": "kwafu Rd, Makindye",
+        "phone": "+256 700 310203",
+        "website": "https://saharabakery.example.com",
+        "image": "sahara-bakery.jpg",
+        "membership": 3,
+        "description": "Artisanal breads and pastries inspired by Saharan flavors since 1998."
+    },
+    {
+        "name": "Makindye Property Consultants",
+        "address": "Lukuli Road, Makindye",
+        "phone": "+256 777 662299",
+        "website": "https://makindyeproperties.ug",
+        "image": "makindye-property.jpg",
+        "membership": 1,
+        "description": "Real estate brokerage and land management services."
+    },
+    {
+        "name": "SunPower Solar Uganda",
+        "address": "Kibuli Hill, Makindye",
+        "phone": "+256 789 550012",
+        "website": "https://sunpowersolar.ug",
+        "image": "sunpower-solar.jpg",
+        "membership": 3,
+        "description": "Solar installation and maintenance for homes and businesses."
+    }
+]
