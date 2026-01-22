@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 2rem;
+    background: #f0f4f8;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    color: #2a5d84;
+}
+
+main {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+figure {
+    margin-top: 1rem;
+}
+
+figcaption {
+    font-style: italic;
+    margin-top: 0.5rem;
+}
+
+footer {
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+    color: #666;
+}
