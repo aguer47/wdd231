@@ -61,6 +61,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 weatherIcon.src = `https://openweathermap.org/img/wn/${current.weather[0].icon}@2x.png`;
                 weatherIcon.alt = current.weather[0].description;
+                weatherIcon.hidden = false;
 
                 forecastDiv.innerHTML = "";
                 const dayNames = ["Today", "Tomorrow", "Day After"];
