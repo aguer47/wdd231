@@ -83,42 +83,62 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 
-    /* ================= MEMBER SPOTLIGHTS ================= */
-    const spotlightContainer = document.querySelector("#spotlights");
+    
+    /*  MEMBER SPOTLIGHTS */
+    fetch("data/members.json")
+        .then(response => {
+            if (!response.ok) throw new Error("Members fetch failed");
+            return response.json();
+        })
+        .then(members => {
 
-    if (spotlightContainer) {
-        fetch("data/members.json")
-            .then(res => res.json())
-            .then(members => {
+            const spotlightContainer = document.querySelector("#spotlights");
+            if (!spotlightContainer) return;
 
-                const qualified = members.filter(
-                    m => m.membership === 2 || m.membership === 3
-                );
+            // Gold (3) and Silver (2) only
+            const qualified = members.filter(
+                member => member.membership === 3 || member.membership === 2
+            );
 
-                const selected = qualified
-                    .sort(() => 0.5 - Math.random())
-                    .slice(0, 3);
+            // Shuffle and select 3
+            const shuffled = qualified.sort(() => 0.5 - Math.random());
+            const selected = shuffled.slice(0, 3);
 
-                spotlightContainer.innerHTML = "";
+            spotlightContainer.innerHTML = "";
 
-                selected.forEach(member => {
-                    const card = document.createElement("div");
-                    card.className = "spotlight";
+            selected.forEach(member => {
+                const card = document.createElement("div");
+                card.classList.add("spotlight");
 
-                    card.innerHTML = `
-                        <h3>${member.name}</h3>
-                        <p>${member.description}</p>
-                        <p><strong>Phone:</strong> ${member.phone}</p>
-                        <a href="${member.website}" target="_blank">Visit Website</a>
-                    `;
+                card.innerHTML = `
+        <!-- Company Logo -->
+        <div class="company-logo">
+          <img src="images/${member.image}" alt="${member.name} logo" loading="lazy">
+        </div>
+        
+        <h3>${member.name}</h3>
+        <p>${member.description}</p>
+        <p><strong>ADDRESS:</strong> ${member.address}</p>
+        <p><strong>PHONE:</strong> ${member.phone}</p>
+        <p>
+          <strong>WEBSITE:</strong>
+          <a href="${member.website}" target="_blank">${member.website}</a>
+        </p>
+        <div class="membership-badge">
+          ${member.membership === 3 ? "⭐ Gold Member" : "🌟 Silver Member"}
+        </div>
+      `;
 
-                    spotlightContainer.appendChild(card);
-                });
-            })
-            .catch(err => {
-                console.error("Spotlight error:", err);
-                spotlightContainer.innerHTML = "<p>Unable to load spotlights.</p>";
+                spotlightContainer.appendChild(card);
             });
-    }
+        })
+        .catch(error => {
+            console.error("Spotlight error:", error);
+            const spotlightContainer = document.querySelector("#spotlights");
+            if (spotlightContainer) {
+                spotlightContainer.innerHTML = "<p>Unable to load member spotlights. Please try again later.</p>";
+            }
+        });
+
 
 });
