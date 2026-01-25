@@ -206,3 +206,26 @@ footer {
     gap: 2rem;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
+
+/* Wayfinding */
+nav a.active,
+nav a[aria-current="page"] {
+    color: #ffd166;
+    font-weight: 700;
+    border-bottom: 3px solid #ffd166;
+}
+
+/* Mobile menu support */
+#menuBtn {
+    font-size: 1.8rem;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    #menuBtn {
+        display: none;
+    }
+}

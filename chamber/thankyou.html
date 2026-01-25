@@ -4,57 +4,52 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description"
-            content="The official ValueHub Solutions member directory, helping users find verified businesses quickly and efficiently.">
+        <meta name="description" content="Thank you for joining ValueHub Solutions Chamber of Commerce.">
         <meta name="author" content="Majok Aguer">
-        <title>ValueHub Solutions Directory</title>
+        <title>Thank You | ValueHub Solutions</title>
 
-        <link rel="icon" href="/favicon.ico">
+        <link rel="icon" href="favicon.ico">
 
-        <meta property="og:title" content="ValueHub Solutions, the most trusted business network.">
-        <meta property="og:description" content="Explore a network of credible businesses at ValueHub Solutions, built for trust and growth">
-        <meta property="og:image" content="https://aguer47.github.io/wdd231/chamber/images/logo.png">
-        <meta property="og:url" content="https://aguer47.github.io/wdd231/chamber/directory.html">
-        <meta property="og:type" content="website">
         <link rel="stylesheet" href="styles/normalize.css">
-        <link rel="stylesheet" href="styles/directory.css">
         <link rel="stylesheet" href="styles/home.css">
-        <script src="scripts/directory.js" defer></script>
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-            rel="stylesheet">
+        <script src="scripts/thankyou.js" defer></script>
     </head>
 
     <body>
+
         <header>
             <div class="logo">
                 <img src="images/logo.png" alt="ValueHub Solutions Logo">
                 <h1>ValueHub Solutions</h1>
             </div>
+
             <nav>
                 <button id="menuBtn" aria-label="Open navigation menu">☰</button>
                 <ul id="navList">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="directory.html" class="active">Directory</a></li>
-                    <li><a href="directory.html">Discover</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="discover.html">Discover</a></li>
                     <li><a href="join.html">Join</a></li>
                 </ul>
             </nav>
         </header>
 
-        <main>
-            <h2>Business Directory</h2>
+        <main class="join-page">
+            <h2>Thank You for Joining Us🤝</h2>
+            <p>Your membership application has been successfully submitted.</p>
 
-            <div class="view-buttons">
-                <button id="gridBtn">Grid View</button>
-                <button id="listBtn">List View</button>
-            </div>
+            <section class="confirmation card">
+                <h3>Submitted Information</h3>
 
-            <section id="members" class="grid">
-                <h3 class="visually-hidden">Chamber Members</h3>
-                
+                <ul class="confirmation-list">
+                    <li><strong>First Name:</strong> <span id="fname"></span></li>
+                    <li><strong>Last Name:</strong> <span id="lname"></span></li>
+                    <li><strong>Email:</strong> <span id="email"></span></li>
+                    <li><strong>Mobile Phone:</strong> <span id="phone"></span></li>
+                    <li><strong>Business Name:</strong> <span id="business"></span></li>
+                    <li><strong>Date Submitted:</strong> <span id="timestamp"></span></li>
+                </ul>
             </section>
         </main>
 
@@ -86,11 +81,12 @@
                     <h3>Project Info</h3>
                     <p>WDD 231 Chamber Project</p>
                     <p>Majok Aguer</p>
-                    <p>© <span id="year"></span></p>
-                    <p>Last Modified:<br><span id="lastModified"></span></p>
+                    <p>© <span id="year"></span> ValueHub Solutions</p>
+                    <p>Last Modified: <span id="lastModified"></span></p>
                 </div>
             </div>
         </footer>
+
     </body>
 
 </html>
