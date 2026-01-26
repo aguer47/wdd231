@@ -1,6 +1,4 @@
-/* ===============================
-   JOIN PAGE LAYOUT
-================================ */
+
 
 .join-page {
     max-width: 1200px;
@@ -17,9 +15,7 @@
     max-width: 65ch;
 }
 
-/* ===============================
-   FORM + CARD GRID
-================================ */
+/*  FORM + CARD GRID*/
 
 .join-layout {
     display: grid;
@@ -33,9 +29,7 @@
     }
 }
 
-/* ===============================
-   FORM STYLING
-================================ */
+/* FORM STYLING */
 
 .join-form {
     display: grid;
@@ -89,16 +83,14 @@
     outline: 3px solid #000;
 }
 
-/* ===============================
-   MEMBERSHIP CARDS
-================================ */
+/* MEMBERSHIP CARDS */
 
 .membership-cards {
     display: grid;
     gap: 1.5rem;
 }
 
-/* animation on load (NOT hover) */
+
 .membership-cards .card {
     background-color: #f8f9fa;
     padding: 1.25rem;
@@ -139,9 +131,7 @@
     color: #1a4d8f;
 }
 
-/* ===============================
-   MODAL STYLING
-================================ */
+/* MODAL STYLING */
 
 dialog {
     border: none;
