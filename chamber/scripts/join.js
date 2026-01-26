@@ -1,12 +1,14 @@
-// TIMESTAMP// 
-const timestampField = document.getElementById("timestamp");
-if (timestampField) {
-    timestampField.value = new Date().toISOString();
-}
 
-// ===============================
-// MODAL LOGIC
-// ===============================
+// TIMESTAMP
+document.addEventListener("DOMContentLoaded", () => {
+    const timestampField = document.getElementById("timestamp");
+    if (timestampField) {
+        timestampField.value = new Date().toISOString();
+    }
+});
+
+
+//  MODAL LOGIC
 const modalLinks = document.querySelectorAll("[data-modal]");
 const dialogs = document.querySelectorAll("dialog");
 
