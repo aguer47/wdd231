@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description"
+            content="Discover Kampala through local attractions, culture and business opportunities supported by ValueHub Solutions Chamber of Commerce.">
+        <meta name="author" content="Majok Aguer">
+        <title>Discover Kampala | ValueHub Solutions Chamber</title>
+        <link rel="icon" href="favicon.ico">  
+        
+        <meta property="og:title" content="Discover Kampala - ValueHub Solutions Chamber">
+        <meta property="og:description" content="Explore key places, culture and opportunities in Kampala.">
+        <meta property="og:image" content="https://aguer47.github.io/wdd231/chamber/images/logo.png">
+        <meta property="og:url" content="https://aguer47.github.io/wdd231/chamber/discover.html">
+        <meta property="og:type" content="website">
+        
+        <!-- Styles -->
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/home.css">
+        <link rel="stylesheet" href="styles/discover.css">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+        
+        <script src="scripts/discover.js" defer></script>
+    </head>
+
+    <body> 
+        <header>
+            <div class="logo"> <img src="images/logo.png" alt="ValueHub Solutions Logo">
+                <h1>ValueHub Solutions</h1>
+            </div>
+            <nav> <button id="menuBtn" aria-label="Open navigation menu">☰</button>
+                <ul id="navList">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="discover.html" class="active">Discover</a></li>
+                    <li><a href="join.html">Join</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="discover-page">
+             
+            <section id="visit-message" class="visit-message"> 
+                
+             </section>
+            <h2>Discover Kampala</h2>
+            <p class="intro"> Kampala is a vibrant hub of culture, commerce and innovation. Explore some of the key
+                places that make our city a great destination for businesses and visitors. </p>
+                 
+            <section class="discover-grid" id="discoverGrid"> 
+            
+            </section>
+        </main> 
+        <!-- FOOTER -->
+        <footer>
+            <script type="module" src="scripts/discover.js"></script>
+
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>ValueHub Solutions</h3>
+                    <p>Old Kampala Rd<br>Makindye, Wakiso District</p>
+                    <p>Email: info@valuehubcc.org</p>
+                    <p>Phone: (256) 755-2300</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Connect With Us</h3>
+                    <div class="social"> <a href="https://tiktok.com" aria-label="Tiktok"> <img src="images/tiktok.jpg"
+                                alt="Tiktok icon"> </a> <a href="https://linkedin.com" aria-label="LinkedIn"> <img
+                                src="images/linkedin.png" alt="LinkedIn icon"> </a> <a href="https://instagram.com"
+                            aria-label="Instagram"> <img src="images/instagram.png" alt="Instagram icon"> </a> </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Project Info</h3>
+                    <p>WDD 231 Chamber Project</p>
+                    <p>Majok Aguer</p>
+                    <p>© <span id="year"></span> ValueHub Solutions</p>
+                    <p>Last Modified: <span id="lastModified"></span></p>
+                </div>
+            </div>
+        </footer>
+    </body>
+
+</html>
