@@ -32,7 +32,7 @@ if (container) {
         card.classList.add("discover-card");
 
         
-        card.style.gridArea = `card${index + 1}`;
+    
 
         card.innerHTML = `
             <h2>${place.name}</h2>
