@@ -2,8 +2,8 @@
 :root {
     --bg: #fff9f0;
     --text: #222222;
-    --brand: #d35400;
-    --brand-600: #b94600;
+    --brand: #d15300;
+    --brand-dark: #c14400;
     --muted: #555555;
     --card: #ffffff;
     --border: #e6e1d8;
@@ -41,6 +41,10 @@ header {
     font-weight: 700;
     color: var(--brand);
     text-decoration: none;
+}
+
+a.brand {
+    color: var(--brand-dark);
 }
 
 .brand svg {
