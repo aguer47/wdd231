@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Recipe Explorer — Thanks</title>
+        <meta name="description" content="Form submission summary.">
+        <meta name="author" content="Majok Aguer" />
+        <link rel="canonical" href="https://aguer47.github.io/wdd231/project/thanks.html">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Recipe Explorer — Thanks">
+        <meta property="og:description" content="Form submission summary.">
+        <meta property="og:image" content="images/og-image.svg">
+        <meta property="og:url" content="https://aguer47.github.io/wdd231/project/thanks.html">
+        <meta name="twitter:card" content="summary_large_image">
+
+        
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+        <link rel="stylesheet" href="styles/main.css">
+
+        
+        <script type="module">
+            document.addEventListener('DOMContentLoaded', () => {
+                const params = new URLSearchParams(location.search);
+                const pre = document.getElementById('result');
+                const obj = Object.fromEntries(params.entries());
+                pre.textContent = JSON.stringify(obj, null, 2);
+            });
+        </script>
+
+        
+        <script src="scripts/main.js" type="module" defer></script>
+    </head>
+
+    <body>
+        <header>
+        <nav class="container" aria-label="Primary navigation">
+        
+            <a class="brand" href="index.html">
+                <span class="logo-text" aria-hidden="true">🍲</span>
+                <span class="brand-name">Recipe Explorer</span>
+            </a>
+        
+            <button class="hamburger" aria-expanded="false" aria-controls="primary-links" aria-label="Menu">
+                ☰
+            </button>
+        
+            <div id="primary-links" class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="recipes.html">Recipes</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <button class="theme-toggle" id="themeToggle" type="button">
+                    Toggle Theme
+                </button>
+            </div>
+        
+        </nav>
+        </header>
+
+        <main class="container">
+            <h1>Thank you 🤝</h1>
+            <p>Here is a copy of what you submitted:</p>
+            <pre id="result" aria-live="polite"></pre>
+
+            <h2 id="attributions">Attributions</h2>
+            <ul>
+                <li>Food photography sourced from Pexels (https://www.pexels.com).</li>
+                <li>Images were edited, compressed and converted to WebP using Squoosh.</li>
+                <li>All recipe data, names and descriptions were authored by the student for this project.</li>
+            </ul>
+
+        </main>
+
+        <footer>
+            <div class="container">
+                <p>&copy; <span id="year"></span> | Recipe Explorer |
+                    Last updated: <span id="lastModified"></span> |
+                    <a href="thanks.html#attributions">Attributions</a> |
+                    <a href="https://example.com/your-video" target="_blank" rel="noopener noreferrer">Project Video</a>
+                </p>
+            </div>
+        </footer>
+
+    </body>
+
+</html>

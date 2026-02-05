@@ -1,0 +1,251 @@
+[
+    {
+        "id": 1,
+        "name": "Ugandan Rolex",
+        "cuisine": "African",
+        "time": 10,
+        "difficulty": "Easy",
+        "ingredients": [
+            "chapati",
+            "eggs",
+            "tomato",
+            "onion",
+            "cabbage"
+        ],
+        "image": "images/rolex.webp",
+        "alt": "Ugandan rolex wrap with eggs and vegetables",
+        "description": "A quick street-food favorite: eggs and veggies rolled in a chapati."
+    },
+    {
+        "id": 2,
+        "name": "Chapati",
+        "cuisine": "African",
+        "time": 30,
+        "difficulty": "Medium",
+        "ingredients": [
+            "flour",
+            "water",
+            "salt",
+            "oil"
+        ],
+        "image": "images/chapati.webp",
+        "alt": "Stack of freshly cooked chapati",
+        "description": "Soft layered flatbread—perfect side for stews and breakfast."
+    },
+    {
+        "id": 3,
+        "name": "Chicken Pilau",
+        "cuisine": "African",
+        "time": 60,
+        "difficulty": "Medium",
+        "ingredients": [
+            "rice",
+            "chicken",
+            "pilau masala",
+            "onion",
+            "garlic"
+        ],
+        "image": "images/pilau.webp",
+        "alt": "Bowl of chicken pilau rice with spices",
+        "description": "Spiced rice with aromatic masala and tender chicken."
+    },
+    {
+        "id": 4,
+        "name": "Omelette",
+        "cuisine": "American",
+        "time": 10,
+        "difficulty": "Easy",
+        "ingredients": [
+            "eggs",
+            "milk",
+            "salt",
+            "pepper"
+        ],
+        "image": "images/omlette.webp",
+        "alt": "Fluffy omelette on a plate",
+        "description": "Quick breakfast classic—customize with your favorite fillings."
+    },
+    {
+        "id": 5,
+        "name": "Fried Plantains",
+        "cuisine": "African",
+        "time": 20,
+        "difficulty": "Easy",
+        "ingredients": [
+            "plantains",
+            "oil",
+            "salt"
+        ],
+        "image": "images/plantian.webp",
+        "alt": "Crispy fried plantain slices",
+        "description": "Sweet and crispy—great snack or side."
+    },
+    {
+        "id": 6,
+        "name": "Spaghetti Bolognese",
+        "cuisine": "European",
+        "time": 45,
+        "difficulty": "Medium",
+        "ingredients": [
+            "spaghetti",
+            "beef",
+            "tomato",
+            "onion",
+            "garlic"
+        ],
+        "image": "images/spaghetti.webp",
+        "alt": "Spaghetti with rich bolognese sauce",
+        "description": "Hearty Italian favorite with tomato and beef sauce."
+    },
+    {
+        "id": 7,
+        "name": "Vegetable Stir Fry",
+        "cuisine": "Asian",
+        "time": 20,
+        "difficulty": "Easy",
+        "ingredients": [
+            "broccoli",
+            "carrot",
+            "soy sauce",
+            "garlic"
+        ],
+        "image": "images/vegetable.webp",
+        "alt": "Colorful vegetable stir fry",
+        "description": "Quick wok-cooked veggies with savory sauce."
+    },
+    {
+        "id": 8,
+        "name": "Beef Tacos",
+        "cuisine": "Latin",
+        "time": 25,
+        "difficulty": "Easy",
+        "ingredients": [
+            "tortillas",
+            "beef",
+            "onion",
+            "tomato",
+            "lettuce"
+        ],
+        "image": "images/taccos.webp",
+        "alt": "Three beef tacos with toppings",
+        "description": "Crisp, juicy tacos loaded with classic fixings."
+    },
+    {
+        "id": 9,
+        "name": "Hummus",
+        "cuisine": "Middle Eastern",
+        "time": 10,
+        "difficulty": "Easy",
+        "ingredients": [
+            "chickpeas",
+            "tahini",
+            "lemon",
+            "garlic",
+            "olive oil"
+        ],
+        "image": "images/humus.webp",
+        "alt": "Bowl of hummus with olive oil",
+        "description": "Creamy dip—perfect with pita or veggies."
+    },
+    {
+        "id": 10,
+        "name": "Shakshuka",
+        "cuisine": "Middle Eastern",
+        "time": 30,
+        "difficulty": "Easy",
+        "ingredients": [
+            "eggs",
+            "tomato",
+            "pepper",
+            "onion",
+            "spices"
+        ],
+        "image": "images/shakshuka.webp",
+        "alt": "Eggs poached in tomato-pepper sauce",
+        "description": "Eggs poached in a spiced tomato sauce."
+    },
+    {
+        "id": 11,
+        "name": "Avocado Toast",
+        "cuisine": "American",
+        "time": 10,
+        "difficulty": "Easy",
+        "ingredients": [
+            "bread",
+            "avocado",
+            "lemon",
+            "salt",
+            "pepper"
+        ],
+        "image": "images/avocado.webp",
+        "alt": "Avocado toast with spices",
+        "description": "Simple, nutritious breakfast or snack."
+    },
+    {
+        "id": 12,
+        "name": "Samosas",
+        "cuisine": "Asian",
+        "time": 50,
+        "difficulty": "Hard",
+        "ingredients": [
+            "flour",
+            "potato",
+            "peas",
+            "spices",
+            "oil"
+        ],
+        "image": "images/samosas.webp",
+        "alt": "Golden fried samosas",
+        "description": "Crispy pastry with spiced vegetable filling."
+    },
+    {
+        "id": 13,
+        "name": "Grilled Fish",
+        "cuisine": "African",
+        "time": 30,
+        "difficulty": "Medium",
+        "ingredients": [
+            "fish",
+            "lemon",
+            "garlic",
+            "salt",
+            "pepper"
+        ],
+        "image": "images/fish.webp",
+        "alt": "Grilled fish with lemon",
+        "description": "Light, flavorful fish with citrus and herbs."
+    },
+    {
+        "id": 14,
+        "name": "Chicken Curry",
+        "cuisine": "Asian",
+        "time": 40,
+        "difficulty": "Medium",
+        "ingredients": [
+            "chicken",
+            "curry paste",
+            "coconut milk",
+            "onion"
+        ],
+        "image": "images/chicken.webp",
+        "alt": "Chicken curry with rice",
+        "description": "Creamy, aromatic curry served with rice."
+    },
+    {
+        "id": 15,
+        "name": "Greek Salad",
+        "cuisine": "European",
+        "time": 15,
+        "difficulty": "Easy",
+        "ingredients": [
+            "cucumber",
+            "tomato",
+            "feta",
+            "olive",
+            "onion"
+        ],
+        "image": "images/salad.webp",
+        "alt": "Greek salad bowl",
+        "description": "Refreshing salad with feta and olives."
+    }
+]

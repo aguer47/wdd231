@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Recipe Explorer — Recipes</title>
+        <meta name="description"
+            content="Browse recipes by cuisine, difficulty, and time. Open details in an accessible modal.">
+        <meta name="author" content="Majok Aguer">
+
+    
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Recipe Explorer — Recipes">
+        <meta property="og:description" content="Dynamic recipe list generated from JSON data.">
+        <meta property="og:image" content="images/og-image.svg">
+        <meta property="og:url" content="https://aguer47.github.io/wdd231/project/recipes.html">
+        <meta name="twitter:card" content="summary_large_image"> 
+        <link rel="canonical" href="https://aguer47.github.io/wdd231/project/recipes.html">
+
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+        <link rel="stylesheet" href="styles/main.css">
+
+        <script src="scripts/main.js" type="module" defer></script>
+        <script src="scripts/recipe.js" type="module" defer></script>
+    </head>
+
+    <body>
+    
+        <header>
+            <nav class="container" aria-label="Primary navigation">
+            
+                <a class="brand" href="index.html">
+                    <span class="logo-text" aria-hidden="true">🍲</span>
+                    <span class="brand-name">Recipe Explorer</span>
+                </a>
+            
+                <button class="hamburger" aria-expanded="false" aria-controls="primary-links" aria-label="Menu">
+                    ☰
+                </button>
+            
+                <div id="primary-links" class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="recipes.html">Recipes</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                    <button class="theme-toggle" id="themeToggle" type="button">
+                        Toggle Theme
+                    </button>
+                </div>
+            
+            </nav>
+        </header>
+
+        <!-- Main Content -->
+        <main class="container">
+            <h1>Recipes</h1>
+
+            
+            <form class="filter-bar" aria-label="Recipe filters">
+                <label>
+                    <span class="sr-only">Search recipes</span>
+                    <input type="search" id="search" placeholder="Search by name or ingredient">
+                </label>
+
+                <label>
+                    <span class="sr-only">Cuisine</span>
+                    <select id="cuisine">
+                        <option value="">All cuisines</option>
+                        <option>African</option>
+                        <option>Asian</option>
+                        <option>European</option>
+                        <option>American</option>
+                        <option>Middle Eastern</option>
+                        <option>Latin</option>
+                    </select>
+                </label>
+
+                <label>
+                    <span class="sr-only">Difficulty</span>
+                    <select id="difficulty">
+                        <option value="">All difficulties</option>
+                        <option>Easy</option>
+                        <option>Medium</option>
+                        <option>Hard</option>
+                    </select>
+                </label>
+
+                <label>
+                    <span class="sr-only">Maximum cooking time</span>
+                    <select id="time">
+                        <option value="">Any time</option>
+                        <option value="15">≤ 15 min</option>
+                        <option value="30">≤ 30 min</option>
+                        <option value="60">≤ 60 min</option>
+                    </select>
+                </label>
+            </form>
+
+            
+            <section aria-labelledby="results-title">
+                <h2 id="results-title" class="sr-only">Recipe results</h2>
+                <div id="recipesGrid" class="grid"></div>
+            </section>
+        </main>
+
+    
+        <div id="modalBackdrop" class="modal-backdrop" hidden>
+            <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+
+                <header class="modal-header">
+                    <h2 id="modalTitle">Recipe Details</h2>
+                    <button id="modalClose" class="button secondary" aria-label="Close dialog">
+                        Close
+                    </button>
+                </header>
+
+                <div id="modalBody" class="modal-body"></div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <p>&copy; <span id="year"></span> | Recipe Explorer |
+                    Last updated: <span id="lastModified"></span> |
+                    <a href="thanks.html#attributions">Attributions</a> |
+                    <a href="https://example.com/your-video" target="_blank" rel="noopener noreferrer">Project Video</a>
+                </p>
+            </div>
+        </footer>
+
+    </body>
+
+</html>

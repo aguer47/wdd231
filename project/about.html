@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Recipe Explorer — About</title>
+        <meta name="description" content="Learn what Recipe Explorer is, who it is for and how it was built.">
+        <meta name="author" content="Majok Aguer">
+
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="About Recipe Explorer">
+        <meta property="og:description" content="Discover the purpose and design behind Recipe Explorer.">
+        <meta property="og:image" content="images/og-image.svg">
+        <meta property="og:url" content="https://aguer47.github.io/wdd231/project/about.html">
+        <meta name="twitter:card" content="summary_large_image">
+
+        <link rel="canonical" href="https://aguer47.github.io/wdd231/project/about.html">
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+        <link rel="stylesheet" href="styles/main.css">
+
+        <script src="scripts/main.js" type="module" defer></script>
+    </head>
+
+    <body>
+        <header>
+            <nav class="container" aria-label="Primary navigation">
+
+                <a class="brand" href="index.html">
+                    <span class="logo-text" aria-hidden="true">🍲</span>
+                    <span class="brand-name">Recipe Explorer</span>
+                </a>
+
+                <button class="hamburger" aria-expanded="false" aria-controls="primary-links" aria-label="Menu">
+                    ☰
+                </button>
+
+                <div id="primary-links" class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="recipes.html">Recipes</a>
+                    <a href="about.html" aria-current="page">About</a>
+                    <a href="contact.html">Contact</a>
+                    <button class="theme-toggle" id="themeToggle" type="button">
+                        Toggle Theme
+                    </button>
+                </div>
+
+            </nav>
+        </header>
+
+        <main class="container">
+            <h1>About Recipe Explorer</h1>
+
+            <p>
+                Recipe Explorer is a simple web application designed to help people find
+                recipes based on ingredients, cooking time and cuisine. It is built for
+                anyone who wants quick inspiration without complicated steps.
+            </p>
+
+            <section>
+                <h2>Why this site exists</h2>
+                <p>
+                    Many people struggle with deciding what to cook using the ingredients
+                    they already have. Recipe Explorer makes that easier by letting users
+                    browse and filter recipes, save favorites and view clear instructions.
+                </p>
+            </section>
+
+            <section>
+                <h2>Accessibility</h2>
+                <p>
+                    The site is designed so that as many people as possible can use it
+                    comfortably. Pages use clear structure, readable colors and work with
+                    keyboards and screen readers.
+                </p>
+                <ul>
+                    <li>Semantic HTML is used for clear page structure.</li>
+                    <li>Navigation and buttons are keyboard accessible.</li>
+                    <li>Images include descriptive text for screen readers.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Technology Used</h2>
+                <p>
+                    Recipe Explorer was built using core web technologies taught in this
+                    class without external frameworks.
+                </p>
+                <ul>
+                    <li>HTML, CSS and JavaScript.</li>
+                    <li>Local JSON data loaded with JavaScript.</li>
+                    <li>Local storage to save user preferences.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>About the Project</h2>
+                <p>
+                    This website was created as an individual project to practice responsive
+                    design, accessibility and dynamic content using modern JavaScript
+                    techniques.
+                </p>
+            </section>
+        </main>
+
+        <footer>
+            <div class="container">
+                <p>&copy; <span id="year"></span> | Recipe Explorer |
+                    Last updated: <span id="lastModified"></span> |
+                    <a href="thanks.html#attributions">Attributions</a> |
+                    <a href="https://example.com/your-video" target="_blank" rel="noopener noreferrer">Project Video</a>
+                </p>
+            </div>
+        </footer>
+
+    </body>
+
+</html>

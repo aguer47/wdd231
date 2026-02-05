@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Recipe Explorer | Home</title>
+        <meta name="description"
+            content="Find delicious recipes by ingredients, time, and cuisine. Save favorites and explore step-by-step cooking.">
+        <meta name="author" content="Majok Aguer">
+
+
+        <link rel="canonical" href="https://aguer47.github.io/wdd231/finalproject/">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Recipe Explorer | Home">
+        <meta property="og:description" content="Find recipes fast and save your favorites.">
+        <meta property="og:image" content="images/og-image.svg">
+        <meta property="og:url" content="https://aguer47.github.io/wdd231/finalproject/">
+        <meta name="twitter:card" content="summary_large_image">
+
+
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+
+        <link rel="stylesheet" href="styles/main.css">
+
+    
+        <script src="scripts/main.js" type="module" defer></script>
+    </head>
+
+    <body>
+
+
+        <header>
+            <nav class="container" aria-label="Primary navigation">
+            
+                <a class="brand" href="index.html">
+                    <span class="logo-text" aria-hidden="true">🍲</span>
+                    <span class="brand-name">Recipe Explorer</span>
+                </a>
+            
+                <button class="hamburger" aria-expanded="false" aria-controls="primary-links" aria-label="Menu">
+                    ☰
+                </button>
+            
+                <div id="primary-links" class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="recipes.html">Recipes</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                    <button class="theme-toggle" id="themeToggle" type="button">
+                        Toggle Theme
+                    </button>
+                </div>
+            
+            </nav>
+        </header>
+
+        
+        <main class="container" id="main-content">
+
+
+            <section class="hero">
+                <div class="hero-content">
+                    <p class="badge">New</p>
+                    <h1>Cook smarter. Explore boldly.</h1>
+                    <p>
+                        Search recipes by ingredients, time and cuisine.
+                        Save favorites and open details in an accessible modal.
+                    </p>
+
+                    <div class="cta">
+                        <a class="button" href="recipes.html">Browse Recipes</a>
+                        <a class="button secondary" href="about.html">How it works</a>
+                    </div>
+                </div>
+
+                <figure class="hero-image">
+                    <img src="images/ingredients.webp" alt="Fresh cooking ingredients arranged on a table" width="800"
+                        height="533" loading="lazy">
+                    <figcaption class="sr-only">
+                        Decorative image representing cooking ingredients
+                    </figcaption>
+                </figure>
+            </section>
+
+            
+            <section aria-labelledby="features-title">
+                <h2 id="features-title">Features</h2>
+
+                <div class="grid">
+
+                    <article class="card">
+                        <h3>Search by Ingredients</h3>
+                        <p>
+                            Type what's in your kitchen and instantly discover matching recipes.
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <h3>Favorites with Local Storage</h3>
+                        <p>
+                            Save recipes you love and access them anytime you return.
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <h3>Accessible Recipe Modals</h3>
+                        <p>
+                            View recipe details in keyboard- and screen reader-friendly dialogs.
+                        </p>
+                    </article>
+
+                </div>
+            </section>
+
+        </main>
+
+        <footer>
+            <div class="container">
+                <p>&copy; <span id="year"></span> | Recipe Explorer |
+                    Last updated: <span id="lastModified"></span> |
+                    <a href="thanks.html#attributions">Attributions</a> |
+                    <a href="https://example.com/your-video" target="_blank" rel="noopener noreferrer">Project Video</a>
+                </p>
+            </div>
+        </footer>
+
+
+    </body>
+
+</html>

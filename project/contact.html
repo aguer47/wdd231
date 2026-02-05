@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Recipe Explorer — Contact</title>
+        <meta name="description" content="Contact Recipe Explorer. Submit your feedback or recipe suggestion.">
+        <meta name="author" content="Majok Aguer">
+        <link rel="canonical" href="https://aguer47.github.io/wdd231/project/contact.html">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Contact Recipe Explorer">
+        <meta property="og:description" content="Submit your message or recipe idea.">
+        <meta property="og:image" content="images/og-image.svg">
+        <meta property="og:url" content="https://aguer47.github.io/wdd231/project/contact.html">
+        <meta name="twitter:card" content="summary_large_image">
+
+        
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+        <link rel="stylesheet" href="styles/main.css">
+
+        
+        <script src="scripts/main.js" type="module" defer></script>
+    </head>
+
+    <body>
+        <header>
+            <header>
+                <nav class="container" aria-label="Primary navigation">
+            
+                    <a class="brand" href="index.html">
+                        <span class="logo-text" aria-hidden="true">🍲</span>
+                        <span class="brand-name">Recipe Explorer</span>
+                    </a>
+            
+                    <button class="hamburger" aria-expanded="false" aria-controls="primary-links" aria-label="Menu">
+                        ☰
+                    </button>
+            
+                    <div id="primary-links" class="nav-links">
+                        <a href="index.html">Home</a>
+                        <a href="recipes.html">Recipes</a>
+                        <a href="about.html">About</a>
+                        <a href="contact.html" aria-current="page">Contact</a>
+                        <button class="theme-toggle" id="themeToggle" type="button">
+                            Toggle Theme
+                        </button>
+                    </div>
+            
+                </nav>
+            </header>
+
+        </header>
+
+        <main class="container">
+            <h1>Talk To Us!!!</h1>
+            <form method="get" action="thanks.html">
+                <div class="field">
+                    <label for="name">Name</label>
+                    <input id="name" name="name" required />
+                </div>
+                <div class="field">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" required />
+                </div>
+                <div class="field">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button class="button" type="submit">Send</button>
+            </form>
+        </main>
+
+        <footer>
+            <div class="container">
+                <p>&copy; <span id="year"></span> | Recipe Explorer |
+                    Last updated: <span id="lastModified"></span> |
+                    <a href="thanks.html#attributions">Attributions</a> |
+                    <a href="https://example.com/your-video" target="_blank" rel="noopener noreferrer">Project Video</a>
+                </p>
+            </div>
+        </footer>
+
+    </body>
+
+</html>
