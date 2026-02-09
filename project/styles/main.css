@@ -44,7 +44,8 @@ header {
 }
 
 a.brand {
-    color: var(--brand-dark);
+    color: var(--brand-600);
+    color:#ffffff
 }
 
 .brand svg {
@@ -150,6 +151,7 @@ main {
     text-decoration: none;
     display: inline-block;
 }
+
 
 .button.secondary {
     background: transparent;
@@ -309,4 +311,10 @@ select:focus,
 textarea:focus {
     outline: 2px solid var(--brand-600);
     outline-offset: 2px;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--brand-dark);
 }
