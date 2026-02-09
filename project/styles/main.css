@@ -4,6 +4,7 @@
     --text: #222222;
     --brand: #d15300;
     --brand-dark: #c14400;
+    --brand-600: #c14400
     --muted: #555555;
     --card: #ffffff;
     --border: #e6e1d8;
@@ -45,7 +46,6 @@ header {
 
 a.brand {
     color: var(--brand-600);
-    color:#ffffff
 }
 
 .brand svg {
@@ -121,10 +121,8 @@ main {
     margin: 1rem 0
 }
 
-.hero h1 {
-    color: var(--brand);
-    margin: .25rem 0
-}
+
+
 
 .hero p {
     color: var(--muted)
@@ -317,4 +315,5 @@ h1,
 h2,
 h3 {
     color: var(--brand-dark);
+    background-color: var(--bg);
 }
