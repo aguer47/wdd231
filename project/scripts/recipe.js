@@ -1,4 +1,4 @@
-import { getRecipes } from './data.js';
+import { getRecipes } from './data.js'; // import the asynchronnous function into main file
 import { openModal } from './modal.js';
 
 const state = {
@@ -57,7 +57,7 @@ function applyFilters() {
 function render() {
     const grid = document.getElementById('recipesGrid');
     if (!grid) return;
-    grid.innerHTML = state.filtered.map(recipeCard).join('');
+    grid.innerHTML = state.filtered.map(recipeCard).join(''); // after retrievving the data
 }
 
 function showDetails(id) {
@@ -94,7 +94,7 @@ function onGridClick(e) {
     }
 }
 
-document.addEventListener('DOMContentLoaded', async () => {
+document.addEventListener('DOMContentLoaded', async () => {   // inside DOMcontent loaded, I await the recipe
     state.all = await getRecipes();
 
     if (state.all.length < 15) {
